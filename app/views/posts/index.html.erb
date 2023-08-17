@@ -1,0 +1,11 @@
+<h1>掲示板アプリ</h1>
+<%= form_with(model: @post, url: "#") do |form| %>
+  <div>
+    <%= form.label :body, "本文" %>
+    <%= form.text_area :body, rows: 4 %>
+  </div>
+
+  <div>
+    <%= form.submit "送信" %>
+  </div>
+<% end %>
